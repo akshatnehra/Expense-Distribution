@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Distribution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Distribution</h1>
+        
+        <!-- Add Member Form -->
+        <div id="add-member-form">
+            <input type="text" id="member-name" placeholder="Enter member name">
+            <button onclick="addMember()">Add Member</button>
+        </div>
+        
+        <!-- Members List -->
+        <div id="members-list">
+            <!-- Member items will be added dynamically here -->
+        </div>
+
+        <div id="extra-costs-section">
+            <div>Extra Costs: <span id="extra-costs-display">$0.00</span></div>
+        </div>
+        
+        <!-- Add Expense Form -->
+        <div id="add-expense-form">
+            <select id="member-dropdown"></select>
+            <input type="number" id="expense-amount" placeholder="Enter expense amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        
+        <!-- Additional Costs -->
+        <div id="additional-costs">
+            <input type="number" id="extra-costs" placeholder="Enter additional costs">
+            <button id="submit-extra-costs">Submit Additional Costs</button>
+        </div>
+        
+        <!-- Expense Distribution -->
+        <div id="expense-distribution">
+            <!-- Expense distribution details will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
